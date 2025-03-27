@@ -5,6 +5,7 @@ import { EpfoLogin, EpfoOtp } from './claim/epfo';
 import { UmangLogin, UmangOtp } from './claim/umang';
 import NoPage from './NoPage';
 import Home from './Home';
+import ClaimForm from './claim/umang/raiseClaim';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/claim-umang/login' element={<UmangLogin />} />
         <Route path='/claim-umang/otp' element={<UmangOtp />} />
+        <Route path='claim-umang/raiseclaim' element={<ClaimForm />}/>
         <Route path='/claim-epfo/login' element={<EpfoLogin />} />
         <Route path='/claim-epfo/otp' element={<EpfoOtp />} />
         <Route path='*' element={<NoPage />} />
